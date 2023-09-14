@@ -2,13 +2,74 @@
 :root{
     --bg-color: white;
     --primary-color: fuchsia;
+    --card-bg-color: #0f0e17;
     --card-text-color: white;
     --mail-color: rgb(0, 166, 255);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
 /*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*BODY*/
+body{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+/*HEADER*/
+h1{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+/*MAIN*/
+
+.container{
+    width: 80%;
+    margin: auto auto  ;
+}
+
+.row{
+    margin-top: 10px;
+}
+
+.col{
+    float: left;
+    width: calc(80% / 3);
+    line-height: 15px;
+    background-color: var(--card-bg-color);
+    text-align: left;
+    margin: 10px;
+    color: var(--card-text-color);
+}
+
+.col img{
+    height: 109px;
+    float: left;
+}
+
+.name{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.col .name,
+.col p{
+    margin: 1rem 0;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mail-address{
+    color: var(--mail-color);
 }
