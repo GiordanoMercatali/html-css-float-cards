@@ -1,0 +1,14 @@
+/*VARIABLES*/
+:root{
+    --bg-color: white;
+    --primary-color: fuchsia;
+    --card-text-color: white;
+    --mail-color: rgb(0, 166, 255);
+}
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
