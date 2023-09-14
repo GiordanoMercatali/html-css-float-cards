@@ -6,17 +6,16 @@
     --card-text-color: white;
     --mail-color: #2baadb;
 }
-
+/*FONT IMPORT*/
 @font-face {
-    font-family: 'Fredoka';
-    font-style: normal;
-    font-weight: 700;
-    font-stretch: normal;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OFiX8EemK.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k7367_B-i2yQag0-mac3OFiX8EemK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /*RESET*/
 *{
     margin: 0;
@@ -44,22 +43,23 @@ h1{
     margin: auto auto ;
 }
 
+/*TABLE*/
 .row{
     margin-top: 10px;
 }
 
 .col{
     float: left;
-    width: calc(80% / 3);
+    width: calc(100% / 3 - 80px);
     line-height: 15px;
     background-color: var(--card-bg-color);
     text-align: left;
     margin: 20px 40px;
     color: var(--card-text-color);
 }
-
+ /*CARDS CONTENT*/
 .col img{
-    height: 109px;
+    height: 100px;
     float: left;
 }
 
